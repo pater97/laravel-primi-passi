@@ -43,7 +43,7 @@
          </h1>
          <div>
              <ul>
-                 <li>{{$about}}</li>
+                 <li><a href="{{ route('about') }}">{{$about}}</a></li> 
                  <li>{{$info}}</li>
                  <li>{{$blog}}</li>
                  <li>{{$news}}</li>
@@ -52,3 +52,4 @@
     </header>
 </body>
 </html>
+
