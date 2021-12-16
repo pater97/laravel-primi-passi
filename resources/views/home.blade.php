@@ -34,6 +34,10 @@
             cursor:pointer;
             transition:all 1s;
         }
+        a{
+            text-decoration:none;
+            color:black;
+        }
     </style>
 </head>
 <body>
@@ -43,10 +47,10 @@
          </h1>
          <div>
              <ul>
-                 <li><a href="{{ route('about') }}">{{$about}}</a></li> 
-                 <li>{{$info}}</li>
-                 <li>{{$blog}}</li>
-                 <li>{{$news}}</li>
+                 <li><a href="{{ url('about') }}">{{$about}}</a></li> 
+                 <li><a href="{{ url('info') }}">{{$info}}</a></li> 
+                 <li><a href="{{ url('news') }}">{{$news}}</a></li> 
+                 <li><a href="{{ url('blog') }}">{{$blog}}</a></li> 
              </ul>
          </div>
     </header>
